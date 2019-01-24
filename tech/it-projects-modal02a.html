@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html style='background-color: #010101;'>
+<head>
+<meta charset='utf-8'/>
+<meta http-equiv="Page-Enter" content="blendTrans(Duration=0)">
+<meta http-equiv="Page-Exit" content="blendTrans(Duration=0)">
+<title></title>
+<style>
+
+/* slider styles */
+.body { 
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:11px;
+    font-family: sans-serif;
+	-webkit-font-smoothing: antialiased; 
+	text-rendering: optimizeLegibility;
+	vertical-align:baseline;
+	background:black;
+	color:white; 
+	}
+.mainCy 			{ position:absolute; top:10px; left:10px; padding: 0px; }
+.mainCy #choices 	{ cursor: pointer; margin:40px 0 0 -30px; }
+.mainCy ul 			{ list-style: none; }
+.mainCy li 			{ list-style: none; color:silver;}
+.mainCy li:hover 	{ list-style: none; color:white;}
+.mainCy #slideshow	{ margin:0;padding:0; background:black; overflow:hidden; }
+.mainCy img 		{ margin:0;padding:0; display: none;background:black;width:620px;height:280px;  }
+#showCy 			{ height: 280px; position:relative; top:22px; left:100px;  background:black; }
+#showCy img 		{ margin:0px;padding:0px; display: none;background:black;width:620px;height:280px;  }
+</style>
+</head>
+<body>
+<div class="body">
+<div class="mainCy">
+
+transition effects can take many forms. click on the name of the desired effect.  
+the slideshow pauses if a mouse is hovered over a slide.
+
+		<ul id="choices">
+		    <li>blindX</li>
+		    <li>blindY</li>
+		    <li>blindZ</li>
+		    <li>cover</li>
+		    <li>fade</li>
+		    <li>fadeZoom</li>
+		    <li>growX</li>
+		    <li>growY</li>
+		    <li>none</li>
+		    <li>scrollUp</li>
+		    <li>scrollDown</li>
+		    <li>scrollLeft</li>
+		    <li>scrollRight</li>
+		    <li>shuffle</li>
+		    <li>toss</li>
+		    <li>turnUp</li>
+		    <li>uncover</li>
+		</ul>
+</div>
+<div id="showCy">
+</div>
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<script type="text/javascript">
+$(function() {
+	var fx;
+	$('#choices li').click(function() {
+		fx = $.trim($(this).text());
+		start();
+	});
+	var markup = '<div id="slideshow">'
+		+'<img src="img/it8.jpg">'
+		+'<img src="img/it7.jpg">'
+		+'<img src="img/it6.jpg">'
+		+'<img src="img/it5.jpg">'
+		+'<img src="img/it4.jpg">'
+		+'<img src="img/it3.jpg">'
+		+'<img src="img/it2.jpg">'
+		+'<img src="img/it1.jpg">'		
+		+'</div>';	
+	function start() {
+		$('#slideshow').cycle('stop').remove();
+        $('#showCy').append(markup);
+		$('#effect').html(fx);
+		$('#slideshow').cycle({
+			fx: fx,
+			timeout: 7000, speed:1500, pause:1
+		});
+	}
+
+});
+$(function() {
+	var markup = '<div id="slideshow">'
+		+'<img src="img/it8.jpg">'
+		+'<img src="img/it7.jpg">'
+		+'<img src="img/it6.jpg">'
+		+'<img src="img/it5.jpg">'
+		+'<img src="img/it4.jpg">'
+		+'<img src="img/it3.jpg">'
+		+'<img src="img/it2.jpg">'
+		+'<img src="img/it1.jpg">'	
+		+'</div>';	
+        $('#showCy').append(markup);
+		$('#slideshow').cycle({
+			fx: 'uncover', 
+			timeout: 7000, speed:1500, pause:1
+		});
+	});
+</script>
+</body>
+</html>

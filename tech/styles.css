@@ -1,0 +1,945 @@
+/*
+
+Landing Zero theme - A free landing page theme from BootstrapZero
+http://www.bootstrapzero.com
+
+as modified by titanium opensystems,lc
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Questrial);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:700);
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+	max-width: 100%;
+}
+
+body {
+    font-family: 'Questrial',sans-serif;
+    background-color: #282828;
+    color: #d3d3d3;
+    webkit-tap-highlight-color: #222;
+}
+
+hr {
+    max-width: 80px;
+    border-width: 3px;
+    opacity: 0.5;
+    margin-top: 15px;
+    margin-bottom: 15px;
+	border-color:white; 
+}
+
+a {
+    color: yellow;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+a:hover,
+a:focus {
+    color: yellow;
+    outline: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Questrial',sans-serif;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.wide-space {
+    letter-spacing: 1.6px;
+}
+
+.icon-lg {
+    font-size: 50px;
+    line-height: 18px;
+}
+
+.bg-primary {
+    background-color: #333;
+}
+
+.bg-dark {
+    color: #eee;
+    background-color: #222;
+}
+
+.cursive {
+    font-family: 'Dancing Script', cursive;
+    text-transform: none;
+}
+
+.text-faded {
+    color: #fff;
+}
+
+.text-dark {
+    color: #111;
+}
+
+.text-primary {
+    color: #eee;
+}
+
+.modal-content {
+    background-color: #1d1d1d;
+}
+
+section {
+	min-height: 100%;
+	width: 100%;
+	padding: 70px 0;
+}
+header {
+    position: relative;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+header .header-content {
+    position: relative;
+    width: 100%;
+    padding: 15% 15px;
+    text-align: center;
+    z-index: 2;
+}
+
+header .header-content .inner h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header .header-content .inner p {
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.7);
+}
+
+@media(min-width:800px) {
+    .icon-lg {
+        font-size: 80px;
+    }
+    
+    header .header-content .inner h1 {
+        font-size: 53px;
+    }
+
+    header .header-content .inner p {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 80%;
+        font-size: 18px;
+    }
+    
+}
+
+aside {
+    padding: 50px 0;
+}
+
+footer {
+    padding: 15px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.navbar-default {
+    border-color: rgba(35,35,35,.05);
+    font-family: 'Questrial',sans-serif;
+    background-color: #222;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+}
+
+.navbar-header > .navbar-brand {
+    font-family: 'Questrial',sans-serif;
+    color: rgba(255,255,255);
+    padding: 15px;
+    -webkit-transition: padding .2s ease-in;
+    -moz-transition: padding .2s ease-in;
+    transition: padding .2s ease-in;
+}
+
+.navbar-header > .navbar-brand:hover,
+.navbar-header > .navbar-brand:focus {
+    color: yellow;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #181818;
+}
+.navbar-default .navbar-toggle, .navbar-default .navbar-collapse {
+    border-color: transparent;
+}
+
+.navbar-default .nav > li>a,
+.navbar-default .nav>li>a:focus {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #eee;
+}
+
+.navbar-default .nav > li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+    color: yellow;
+}
+
+.navbar-default .nav > li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    color: rgba(255,255,255,0.8);
+    background-color: transparent;
+}
+
+.navbar-default .nav > li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover
+{
+    background-color: transparent;
+}
+
+
+@media(min-width:800px) {
+    .navbar-default {
+        border-color: transparent;
+        background-color: transparent;
+        min-height: 60px;
+    }
+
+    .navbar-header > .navbar-brand {
+        color: rgba(255,255,255,0.7);
+        padding: 19px;
+    }
+
+    .navbar-default .navbar-header .navbar-brand:hover,
+    .navbar-default .navbar-header .navbar-brand:focus {
+        color: yellow;
+    }
+
+    .navbar-default .nav > li>a,
+    .navbar-default .nav>li>a:focus {
+        color: rgba(255,255,255,0.8);
+        padding: 20px;
+        letter-spacing: 1.1px;
+        text-shadow: 1px 1px 1px rgba(60,60,60,0.7);
+    }
+
+    .navbar-default .nav > li>a:hover,
+    .navbar-default .nav>li>a:focus:hover {
+        color: yellow;
+    }
+
+    .navbar-default.affix {
+        border-color: rgba(34,34,34,.05);
+        background-color: #222;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand {
+        font-size: 15px;
+        color: rgba(255,255,255,0.8);
+        padding: 20px;
+        letter-spacing: 1px;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand:hover,
+    .navbar-default.affix .navbar-header .navbar-brand:focus {
+        color: yellow;
+    }
+
+    .navbar-default.affix .nav > li>a,
+    .navbar-default.affix .nav>li>a:focus {
+        color: #ddd;
+        text-shadow: 1px 1px 1px rgba(30,30,30,0.7);
+    }
+
+    .navbar-default.affix .nav > li>a:hover,
+    .navbar-default.affix .nav>li>a:focus:hover {
+        color: yellow;
+    }
+}
+
+#video-background {
+  position: absolute;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: 1;
+}
+
+#video-background.collapsing {
+  display:none;
+}
+
+footer {
+    background-color:#2d2d2d;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #eee;
+    background-color: #36333d;
+    background-image: none;
+    border: 1px solid #36333d;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-control:focus {
+    color: #222;
+    background-color: #ccc;
+    box-shadow: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.margin-top-0 {
+    margin-top: 0;
+}
+
+.feature {
+    margin: 30px auto 0;
+    max-width: 400px;
+}
+
+.feature p {
+    margin-bottom: 0;
+}
+
+.call-to-action h2 {
+    margin: 0 auto 20px;
+}
+
+.gallery-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+    overflow:hidden;
+}
+
+.gallery-box .gallery-box-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    background: rgba(44,44,44,.8);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.gallery-box .gallery-box-caption .gallery-box-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.gallery-box:hover .gallery-box-caption {
+    opacity: 1;
+}
+
+.gallery-box:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.gallery-box img {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.no-gutter > [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.btn-default {
+    border-color: #fff;
+    color: #222;
+    background-color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    border-color: #ededed;
+    color: #222;
+    background-color: #f2f2f2;
+    opacity: 0.7;
+}
+
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    background-image: none;
+}
+
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+    border-color: #fff;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.btn-default .badge {
+    color: #fff;
+    background-color: #222;
+}
+
+.btn.btn-primary {
+    background-color: transparent;
+    border:1px solid #f0f0f0;
+    border-color:#f0f0f0;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.btn.btn-primary:hover {
+    opacity: 0.7;
+}
+
+.btn {
+    border: 0;
+    border-radius: 290px;
+    font-family: sans-serif;
+}
+
+.btn-xl {
+    padding: 15px 30px;
+    font-size: 20px;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    color: #fff;
+    background: #222;
+}
+
+::selection {
+    text-shadow: none;
+    color: #fff;
+    background: #222;
+}
+
+img::selection {
+    color: #fff;
+    background: 0 0;
+}
+
+img::-moz-selection {
+    color: #fff;
+    background: 0 0;
+}
+
+#zero {
+	
+    background-color: #c9c9c9;
+    background-image: url('Slate-Stone-Xeromatic-720.jpg');
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+
+#one {
+
+	background: url(services-bg.jpg) 50% 0 fixed;
+    height: auto;  
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+	
+}
+
+#two {
+
+	background: url(testimonials-bg.jpg)   50% 0 fixed;
+    height: auto;  
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+}
+
+#three {
+
+	background: url(services-bg.jpg)  50% 0 fixed;
+    height: auto;  
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+}
+
+#four {
+
+	background: url(testimonials-bg.jpg)   50% 0 fixed;
+    height: auto;  
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+}
+
+#five {
+
+/*	background: url(services-bg.jpg)  50% 0 fixed; */
+	background-color: #183a52;
+    height: auto;  
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+}
+
+#contact { 
+    background-color: #c9c9c9;
+    background-image: url('Slate-Stone-Xeromatic-720.jpg');
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+ }
+ 
+ 
+ /*
+	AnythingSlider v1.8+ cs-portfolio theme
+	By Curtis Scott (http://www.curtisscott.com/portfolio.html)
+***
+Note: the nav-cs-portfolio.png used for navigation and slideshow buttons uses a semi-transparent png,
+through which the background color is seen... so colors set will turn out darker than normal
+***/
+
+/*****************************
+  SET DEFAULT DIMENSIONS HERE or on page
+ *****************************/
+/* change the ID & dimensions to match your slider 
+#slider {
+	width: 700px;
+	height: 390px;
+	list-style: none;
+	overflow-y: auto;
+	overflow-x: hidden;
+}*/
+
+/******************
+  SET STYLING HERE
+ ******************
+ =================================
+ Default state (no keyboard focus)
+ ==================================*/
+/* Overall Wrapper */
+.anythingSlider-cs-portfolio {
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* slider window - top & bottom borders, default state */
+.anythingSlider-cs-portfolio .anythingWindow {
+	border: 0;
+}
+/* Navigation buttons + start/stop button, default state */
+.anythingSlider-cs-portfolio .anythingControls a {
+	background: #fff url(cs-portfolio.png) right -20px no-repeat;
+	color: #000;
+}
+/* Navigation current button, default state */
+.anythingSlider-cs-portfolio .anythingControls a.cur,
+.anythingSlider-cs-portfolio .anythingControls a:hover {
+	background-color: #0d5c9f;
+	color: #000;
+}
+
+/* start-stop button, stopped, default state */
+.anythingSlider-cs-portfolio .anythingControls a.start-stop {
+	background-color: #080;
+	background-position: right top;
+	color: #ddd;
+}
+/* start-stop button, default hovered text color (when visible) */
+.anythingSlider-cs-portfolio .anythingControls a.start-stop:hover,
+.anythingSlider-cs-portfolio .anythingControls a.start-stop.hover {
+	background-color: #0f0;
+	color: #fff;
+}
+/* start-stop button, playing, default state */
+.anythingSlider-cs-portfolio .anythingControls a.start-stop.playing {
+	background-color: #800;
+}
+.anythingSlider-cs-portfolio .anythingControls a.start-stop.playing:hover {
+	background-color: #f00;
+}
+
+/************************
+  NAVIGATION POSITIONING
+ ************************/
+/* Navigation Arrows */
+.anythingSlider-cs-portfolio .arrow {
+	display: block;
+	position: absolute;
+	bottom: -38px;
+	z-index: 100;
+}
+.anythingSlider-cs-portfolio .arrow a {
+	display: block;
+	width: 26px;
+	height: 27px;
+	text-align: center;
+	outline: 0;
+	background: url(cs-portfolio.png) no-repeat;
+}
+
+/* back arrow */
+.anythingSlider-cs-portfolio .back { left: 10px; }
+.anythingSlider-cs-portfolio .back a { background-position: left top; }
+.anythingSlider-cs-portfolio .back a:hover,
+.anythingSlider-cs-portfolio .back a.hover { background-position: left -27px; }
+
+/* forward arrow */
+.anythingSlider-cs-portfolio .forward { right: 10px; }
+.anythingSlider-cs-portfolio .forward a { background-position: -24px top; }
+.anythingSlider-cs-portfolio .forward a:hover,
+.anythingSlider-cs-portfolio .forward a.hover { background-position: -24px -27px; }
+
+/* Navigation Links */
+.anythingSlider-cs-portfolio .anythingControls {
+	position: relative;
+	background: url(cs-portfolio.png) repeat-x bottom center;
+	height: 49px;
+	margin: 0 auto;
+	padding-left: 50px;
+	text-align: center;
+}
+.anythingSlider-cs-portfolio .anythingControls ul {
+	margin: 0;
+	padding: 0;
+	z-index: 100;
+}
+.anythingSlider-cs-portfolio .anythingControls ul.thumbNav {
+	padding-top: 18px;
+}
+.anythingSlider-cs-portfolio .anythingControls ul li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+.anythingSlider-cs-portfolio .anythingControls ul a {
+	font: 11px/18px Georgia, Serif;
+	width: 17px;
+	height: 17px;
+	margin: 0 5px 0 0;
+	padding: 0;
+	float: left;
+	text-decoration: none;
+	text-align: center;
+	outline: 0;
+	border: 0;
+}
+
+/* navigationSize window */
+.anythingSlider-cs-portfolio .anythingControls .anythingNavWindow {
+	margin: 0 5px 0 0;
+	overflow: hidden;
+	float: left;
+}
+.anythingSlider-cs-portfolio .anythingControls li.next a,
+.anythingSlider-cs-portfolio .anythingControls li.prev a {
+	margin: 19px 5px 0 5px;
+	width: 16px;
+	height: 15px;
+	background: url(cs-portfolio.png) -25px -54px no-repeat;
+}
+.anythingSlider-cs-portfolio .anythingControls li.prev a {
+	background-position: -9px -54px;
+}
+.anythingSlider-cs-portfolio .anythingControls li.next a:hover {
+	background-position: -56px -54px;
+}
+.anythingSlider-cs-portfolio .anythingControls li.prev a:hover {
+	background-position: -41px -54px;
+}
+
+/* Autoplay Start/Stop button */
+.anythingSlider-cs-portfolio .anythingControls .start-stop {
+	right: 50px;
+	top: 15px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+	z-index: 100;
+	border: 0;
+}
+
+/***********************
+IE8 AND OLDER STYLING
+***********************/
+
+/* Navigation Arrows */
+.as-oldie .anythingSlider-cs-portfolio .anythingControls a span {
+	line-height: 1px; /* needed for IE7 */
+}
+
+/* IE7 png fix*/
+.as-oldie .anythingSlider-cs-portfolio .arrow a,
+.as-oldie .anythingSlider-cs-portfolio .anythingControls,
+.as-oldie .anythingSlider-cs-portfolio .anythingControls a {
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/cs-portfolio.png',sizingMethod='crop');
+}
+
+/***********************
+  COMMON SLIDER STYLING
+ ***********************/
+/* Overall Wrapper */
+.anythingSlider {
+	display: block;
+	overflow: visible !important;
+	position: relative;
+}
+/* anythingSlider viewport window */
+.anythingSlider .anythingWindow {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+/* anythingSlider base (original element) */
+.anythingSlider .anythingBase {
+	background: transparent;
+	list-style: none;
+	position: absolute;
+	overflow: visible !important;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/* Navigation arrow text; indent moved to span inside "a", for IE7;
+  apparently, a negative text-indent on an "a" link moves the link as well as the text */
+.anythingSlider .arrow span,
+.anythingSlider .anythingControls span {
+	display: block;
+	visibility: hidden;
+}
+/* disabled arrows, hide or reduce opacity: opacity: .5; filter: alpha(opacity=50); */
+.anythingSlider .arrow.disabled {
+	display: none;
+}
+/* all panels inside the slider; horizontal mode */
+.anythingSlider .panel {
+	background: transparent;
+	display: block;
+	overflow: hidden;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+/* vertical mode */
+.anythingSlider .vertical .panel {
+	float: none;
+}
+/* fade mode */
+.anythingSlider .fade .panel {
+	float: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+/* fade mode active page - visible & on top */
+.anythingSlider .fade .activePage {
+	z-index: 1;
+}
+
+/* end theme portfolio */
+
+.pageOverlay {
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1001;
+    display: block;
+	background: #000;
+}
+.loadingMessage {
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    z-index: 1001;
+    display: block;
+    color: #999;
+}
+.loadingMessage:before {
+   content: "...LOADING...";
+}
+.animtiming0 { 
+	animation-duration: 1s;
+	animation-delay: 1s; 
+	-moz-animation-duration: 1s;
+	-moz-animation-delay: 1s; 
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 1s; 
+	}
+.animtiming1 { 
+	animation-duration: 1s;
+	animation-delay: 1.5s; 
+	-moz-animation-duration: 1s;
+	-moz-animation-delay: 1.5s; 
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 1.5s; 
+	}
+.animtiming2 { 
+	animation-duration: 2s;
+	animation-delay: 2s; 
+	-moz-animation-duration: 2s;
+	-moz-animation-delay: 2s; 
+	-webkit-animation-duration: 2s;
+	-webkit-animation-delay: 2s; 
+	}		
+#wrapper1 {  
+	margin:0 auto;
+	}
+#slider1 { 
+	width:95%;
+	margin: 0 auto;
+	list-style: none !important;
+	}
+#wrapper2 { 
+	width:630px; 
+	height:461px; 
+	border:1px solid rgb(215,214,213);
+	box-shadow:0px 0px 3px 1px rgb(215,214,213);
+	margin:0; padding:0; 
+	margin-left:auto;margin-right:auto;
+	overflow-x:hidden; overflow-y:visible;
+	color:#ddd; 
+	}
+#slider2 { 
+	width:630px; 
+	height:410px; 
+	margin: 0; padding:0; 
+	overflow-y: auto;overflow-x: hidden; 
+	background:#000; color:#ddd;
+	line-height: 1.5;
+	font-family: sans-serif; font-size:11pt;
+	list-style: none;
+	}
+.reltop {
+	width:610px;
+	padding-top:80px;
+	position: relative;
+	float: none;
+	clear: both;
+	}
+div.buton300red	{ 
+	z-index:99;
+	padding:5px;
+	width:300px;
+	text-align:center;margin-left:auto;margin-right:auto;
+	color:#b00;background:silver;
+	border-radius:10px;
+	font-weight:bold;font-size:9pt; }
+a.buton300 	{ 	
+	text-decoration:none;
+	z-index:99;display:block;
+	padding:2px;width:250px;
+	text-align:center;margin-top:4px;margin-bottom:4px;margin-left:auto;margin-right:auto;
+	color:#222;background:silver;
+	transition: background 1.0s;
+	-moz-transition: background 1.0s; /* Firefox 4 */
+	-webkit-transition: background 1.0s; /* Safari and Chrome */
+	border-radius:10px;
+	font-weight:bold;font-size:9pt; }	
+a.buton300:hover	{ background:white;color:#222; }	
+#slider2 .p  { 
+	width:610px;
+	font-family: "Lucida Console", Monaco, monospace; 
+	font-size:11pt;
+	padding:15px;margin:0;
+	background:#000; 
+	}
+#slider2 .p2  { 
+	width:610px;
+	font-family: "Lucida Console", Monaco, monospace; 
+	font-size:11pt;
+	padding:10px;margin:0;
+	background:#000; 
+	}
+#slider2 img  { width:610px; }
+.modal-content { background:#e0e0e4; color:#222; }
+.modal-dialog { margin: 0 auto; width:80%; }
+.close { opacity:1.0;font-size:150%; }
+blockquote { border:0; }
+.modal *, modal-header * { background-color: #000 !important; color: #d3d3d3 !important; opacity:0.97; } 
+

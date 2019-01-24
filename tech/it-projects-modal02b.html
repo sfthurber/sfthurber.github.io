@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Page-Enter" content="blendTrans(Duration=0)">
+<meta http-equiv="Page-Exit" content="blendTrans(Duration=0)">
+<style>
+.body 				{ margin:0; padding:0; border:0; outline:0; background:black;	color:white; }
+.mainCy 			{ position:absolute; top:10px; left:10px; padding: 0px; }
+.mainCy #slideshow	{ margin:0;padding:0; background:black; overflow:hidden; }
+.mainCy img 		{ margin:0;padding:0; display: none;background:black;width:620px;height:280px;  }
+#showCy 			{ height: 280px; position:relative; top:0px; left:50px;  background:black; }
+#showCy img 		{ margin:0px;padding:0px; display: none;background:black;width:620px;height:280px;  }
+</style>
+</head>
+
+<body>
+<div class="body">
+<div class="mainCy">
+</div>
+<div id="showCy">
+</div>
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.uncover.js"></script>
+<script type="text/javascript">
+$(function() {
+	var markup = '<div id="slideshow">'
+		+'<img src="img/it8.jpg">'
+		+'<img src="img/it7.jpg">'
+		+'<img src="img/it6.jpg">'
+		+'<img src="img/it5.jpg">'
+		+'<img src="img/it4.jpg">'
+		+'<img src="img/it3.jpg">'
+		+'<img src="img/it2.jpg">'
+		+'<img src="img/it1.jpg">'	
+		+'</div>';	
+        $('#showCy').append(markup);
+		$('#slideshow').cycle({
+			fx: 'uncover', 
+			timeout: 7000, speed:1500, pause:1
+		});
+	});
+</script>
+</body>
+</html>

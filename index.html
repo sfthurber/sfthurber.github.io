@@ -1,1 +1,60 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Steve Thurber</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" 
+    integrity="sha256-HtCCUh9Hkh//8U1OwcbD8epVEUdBvuI8wj1KtqMhNkI=" crossorigin="anonymous" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+<nav id="topNav" class="navbar navbar-default navbar-fixed-top animated animtiming0 fadeIn">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="bs-navbar">
+            <ul class="nav navbar-nav">
+                <li><a href="coach/">Coach</a></li>
+                <li><a href="tech/">Tech</a></li>
+                <li><a href="law/">Law</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+	
+<header>
+    <div class="header-content">
+        <div class="inner">
+            <h1 class="cursive">Welcome to my web presence</h1>
+            <hr>
+            <h4>Please select one of my webapps from the menubar at the top</h4>
+        </div>
+    </div>
+</header>
+
+
+<!--SCRIPTS-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>	
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" 
+  integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
+<script>
+    jQuery(document).ready(function($) {    
+        $('.navbar-collapse ul li a').click(function() { $('.navbar-toggle:visible').click(); });
+    });   
+</script>
+<!-- END OF SCRIPTS -->
+
+</body>
+</html>
