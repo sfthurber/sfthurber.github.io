@@ -1,1 +1,0 @@
-# sfthurber.github.io
